@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class SAYILARINTOLAMAI {
+    public static void main(String[] args) {
+        int rakamlar,basdeg=0;
+        Scanner input=new Scanner(System.in);
+        // DEGER ALALIM
+        System.out.print("SAYI GİRİNİZ:");
+        int number= input.nextInt();
+        while (number!=0){
+            rakamlar=number%10;
+            basdeg+=rakamlar;
+            number/=10;
+        }
+        System.out.println("sayının rakamları toplamı:"+basdeg);
+    }
+}
